@@ -40,10 +40,13 @@ didn't exist before) and then the server will create a table for the station dat
 yet.
 
 The database will contain a single table called station_status. and will contain the following columns:
-station_id - for the station ID (will act as a primary key, meaning we only store a single line per
-station ID)
+
+station_id - for the station ID (will act as a primary key, meaning we only store a single line per station ID)
+
 last_date - text representing the last date the station contacted the server
+
 alarm1 - 0 or 1 representing if the alarm was on or off
+
 alarm2 - 0 or 1 representing if the alarm was on or off
 
 When receiving data from a station ID that doesn't exist yet in the database a new line will be
